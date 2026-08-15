@@ -1,0 +1,14 @@
+import { Component } from "@angular/core";
+
+@Component({
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
+})
+export class AppComponent {
+  message = "Hello World";
+
+  displayMessage(newMessage: string) {
+    this.message = newMessage;
+  }
+}

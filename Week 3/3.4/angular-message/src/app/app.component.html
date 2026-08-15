@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Angular Message Display</h1>
+
+  <label for="messageInput">Message to Display</label>
+
+  <input
+    id="messageInput"
+    type="text"
+    #messageInput />
+
+  <button (click)="displayMessage(messageInput.value)">
+    Display Message
+  </button>
+
+  <h2>{{ message }}</h2>
+</div>
